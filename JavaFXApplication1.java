@@ -25,17 +25,28 @@ import javafx.stage.Stage;
  */
 public class JavaFXApplication1 extends Application {
     
+	//Practice with a GUI
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
+        
+		//Create two buttons
+		Button btn = new Button();
         Button btn2 = new Button();
-        btn2.setText("Change the Font Color");
-        Label lbl = new Label("Click the button!");
+        
+		//Set the text of the buttons
+		btn.setText("Print the Text");
+		btn2.setText("Change the Font Color");
+        
+		//Create label and set the color of the text
+		Label lbl = new Label("Click the button!");
         lbl.setTextFill(Color.CHARTREUSE);
-        TextField text = new TextField();
+        
+		//Create a text field
+		TextField text = new TextField();
         text.setMaxWidth(200);
-        btn.setText("Print the Text");
         btn.setMaxWidth(200);
+		
+		//Have button 1 print to the console what is in the text field
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
@@ -43,25 +54,29 @@ public class JavaFXApplication1 extends Application {
                 System.out.println(text.getText());
             }
         });
+		
+		//Have button two change the label's text color 
         btn2.setOnAction (new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                lbl.setTextFill(Color.CRIMSON);
-            }
-        
-            
+            }     
     });
         
         /*StackPane root = new StackPane();
         root.getChildren().add(btn);
         root.getChildren().add(text);
         root.getChildren().add(lbl);*/
-        VBox root = new VBox();
+        
+		//Create a box for putting in your GUI elements
+		VBox root = new VBox();
         root.getChildren().addAll(text,lbl,btn,btn2);
         root.setAlignment(Pos.CENTER);
         
+		//Create a scene in put in your box 
         Scene scene = new Scene(root, 350, 500);
         
+		//Set up the scene, including the title
         primaryStage.setTitle("Practice Program");
         primaryStage.setScene(scene);
         primaryStage.show();
