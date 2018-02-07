@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 public class PracticeGUI extends Application{
 	
-//Practice with a GUI
+    //Practice with a GUI
     public void start(Stage primaryStage) {
         
 	//Create two buttons
@@ -71,8 +71,8 @@ public class PracticeGUI extends Application{
     }
 	public static void main(String[] args) {
 		
-		//Launch the program
-		launch(args);
+	    //Launch the program
+            launch(args);
 	}
 
 }

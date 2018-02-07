@@ -15,13 +15,13 @@ public class HelloWorld extends Application{
     //Practice with a GUI
     public void start(Stage primaryStage) {
         
-	//Create two buttons
+	//Create a button
 	Button btn = new Button();
         
-	//Set the text of the buttons
+	//Set the text of the button
 	btn.setText("Print 'Hello World!'");
 		
-	//Have button 1 print to the console what is in the text field
+	//Have the button print "Hello World"
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
@@ -35,10 +35,10 @@ public class HelloWorld extends Application{
         root.getChildren().addAll(btn);
         root.setAlignment(Pos.CENTER);
         
-        //Create a scene in put in your box 
+        //Create a scene to put the box into 
         Scene scene = new Scene(root, 350, 500);
         
-		//Set up the scene, including the title
+	//Set up the scene, including the title
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(scene);
         primaryStage.show();
