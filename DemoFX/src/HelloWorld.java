@@ -45,8 +45,6 @@ public class HelloWorld extends Application{
         
     }
     
-    public static void main (String[] args) {
-    	launch(args);
-    }
+   
 
 }
