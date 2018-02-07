@@ -12,16 +12,16 @@ import javafx.stage.Stage;
 
 public class HelloWorld extends Application{
 	
-	//Practice with a GUI
+    //Practice with a GUI
     public void start(Stage primaryStage) {
         
-		//Create two buttons
-		Button btn = new Button();
+	//Create two buttons
+	Button btn = new Button();
         
-		//Set the text of the buttons
-		btn.setText("Print 'Hello World!'");
+	//Set the text of the buttons
+	btn.setText("Print 'Hello World!'");
 		
-		//Have button 1 print to the console what is in the text field
+	//Have button 1 print to the console what is in the text field
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
@@ -31,7 +31,7 @@ public class HelloWorld extends Application{
         });
         
         //Create a box for putting in your GUI elements
-  		VBox root = new VBox();
+  	VBox root = new VBox();
         root.getChildren().addAll(btn);
         root.setAlignment(Pos.CENTER);
         
@@ -44,7 +44,5 @@ public class HelloWorld extends Application{
         primaryStage.show();
         
     }
-    
-   
 
 }
