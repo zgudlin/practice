@@ -77,3 +77,5 @@ local.properties
 /PracticeGUI/build/
 /PracticeGUI/dist/
 /JavaDocTest/nbproject/private/
+/TeamDriver/nbproject/private/
+/TeamDriver/build/
