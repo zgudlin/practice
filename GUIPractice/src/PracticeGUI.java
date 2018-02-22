@@ -47,7 +47,12 @@ public class PracticeGUI extends Application{
           
   	    @Override
             public void handle(ActionEvent event) {
-               lbl.setTextFill(Color.CRIMSON);
+               
+  	    		if (lbl.getTextFill() == Color.CHARTREUSE)
+  	    			lbl.setTextFill(Color.CRIMSON);
+  	    		else 
+  	    			lbl.setTextFill(Color.CHARTREUSE);
+               
             }     
     });
         
