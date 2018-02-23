@@ -34,12 +34,11 @@ public class PracticeGUI extends Application{
         btn.setMaxWidth(200);
 		
 	//Have button 1 print to the console what is in the text field
-        btn.setOnAction(new EventHandler<ActionEvent>() {
+        btn.setOnAction(event -> {
             
-            @Override
-            public void handle(ActionEvent event) {
+      
                 System.out.println(text.getText());
-            }
+            
         });
 		
 	//Have button two change the label's text color 
