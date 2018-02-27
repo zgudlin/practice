@@ -1,3 +1,4 @@
+package DemoFX.zeg;
 import javafx.application.Application;
 
 public class Driver {

@@ -1,3 +1,4 @@
+package DemoFX.zeg;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -22,12 +23,10 @@ public class HelloWorld extends Application{
 	btn.setText("Print 'Hello World!'");
 		
 	//Have the button print "Hello World"
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
+        btn.setOnAction(event -> {
+       
                 System.out.println("Hello World!");
-            }
+           
         });
         
         //Create a box for putting in your GUI elements
